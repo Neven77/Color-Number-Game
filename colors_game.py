@@ -5,11 +5,11 @@ import random
 class ColorsGame(GameBase):
     def __init__(self):
         super().__init__()
-        self.colors = ['red', 'blue', 'green', 'yellow']
+        self.colors = ['rot', 'blau', 'grün', 'gelb']
     
     def guess_color(self):
         correct_color = random.choice(self.colors)
-        guess = input("Rate eine Farbe (red, blue, green, yellow): ").lower()
+        guess = input("Rate eine Farbe (rot, blau, grün, gelb): ").lower()
         if guess == correct_color:
             print("Richtig geraten!")
         else:
